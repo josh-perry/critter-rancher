@@ -4,12 +4,20 @@
 
     <foreignObject x="75" y="50" width="50" height="50">
       <div class="screen">
-        <div class="top-bar">
+        <div class="button-bar">
+          <BarButton image="/img/bar_button.png" />
+          <BarButton image="/img/bar_button.png" />
+          <BarButton image="/img/bar_button.png" />
+          <BarButton image="/img/bar_button.png" />
         </div>
 
-        <img src="/img/test_critter.png" />
+        <img src="/img/test_critter.png">
 
-        <div class="bottom-bar">
+        <div class="button-bar">
+          <BarButton image="/img/bar_button.png" />
+          <BarButton image="/img/bar_button.png" />
+          <BarButton image="/img/bar_button.png" />
+          <BarButton image="/img/bar_button.png" />
         </div>
       </div>
     </foreignObject>
@@ -17,18 +25,15 @@
     <foreignObject x="75" y="105" width="50" height="16">
       <div class="buttons">
         <div class="button-space">
-          <div class="button">
-          </div>
+          <div class="button" />
         </div>
 
         <div class="button-space">
-          <div class="button">
-          </div>
+          <div class="button" />
         </div>
 
         <div class="button-space">
-          <div class="button">
-          </div>
+          <div class="button" />
         </div>
       </div>
     </foreignObject>
@@ -51,21 +56,18 @@ svg {
 }
 
 .screen>img {
-  width: 50%;
-  height: 100%;
   margin: auto;
 
   image-rendering: pixelated;
 
-  flex: 50%;
+  flex: 0 0 50%;
 }
 
-.top-bar {
-  flex: 25%;
-}
+.button-bar {
+  flex: 0 0 25%;
+  display: flex;
 
-.bottom-bar {
-  flex: 25%;
+  min-height: 0;
 }
 
 .buttons {
