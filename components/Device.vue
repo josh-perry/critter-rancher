@@ -5,19 +5,19 @@
     <foreignObject x="75" y="50" width="50" height="50">
       <div class="screen">
         <div class="button-bar">
-          <BarButton image="/img/bar_button.png" />
-          <BarButton image="/img/bar_button.png" />
-          <BarButton image="/img/bar_button.png" />
-          <BarButton image="/img/bar_button.png" />
+          <BarButton icon="utensils" />
+          <BarButton icon="lightbulb" />
+          <BarButton icon="dice-six" />
+          <BarButton icon="clinic-medical" />
         </div>
 
         <img src="/img/test_critter.png">
 
         <div class="button-bar">
-          <BarButton image="/img/bar_button.png" />
-          <BarButton image="/img/bar_button.png" />
-          <BarButton image="/img/bar_button.png" />
-          <BarButton image="/img/bar_button.png" />
+          <BarButton icon="bath" />
+          <BarButton icon="weight" />
+          <BarButton icon="comment" />
+          <BarButton icon="smile-beam" />
         </div>
       </div>
     </foreignObject>

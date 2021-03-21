@@ -1,17 +1,22 @@
 <template>
   <div class="bar-button">
-    <img :src="image">
+    <FontAwesomeIcon class="icon" :icon="fa_icon" />
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    image: {
+    icon: {
       type: String,
       default: () => {
         return ''
       }
+    }
+  },
+  computed: {
+    fa_icon () {
+      return ['fas', this.icon]
     }
   }
 }
@@ -22,13 +27,11 @@ export default {
   flex: 0 1 25%;
 }
 
-img {
-  image-rendering: pixelated;
+.icon {
   max-width: 100%;
   max-height: 100%;
+  padding: 10%;
 
-  top: 0;
-  left: 0;
   display: block;
 }
 </style>
