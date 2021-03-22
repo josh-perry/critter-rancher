@@ -1,6 +1,8 @@
 <template>
   <div class="bar-button">
-    <FontAwesomeIcon class="icon" :icon="fa_icon" />
+    <a href="#">
+      <FontAwesomeIcon class="icon" :icon="fa_icon" />
+    </a>
   </div>
 </template>
 
@@ -25,6 +27,16 @@ export default {
 <style scoped>
 .bar-button {
   flex: 0 1 25%;
+  color: #868686;
+}
+
+.bar-button:hover {
+  color: black;
+}
+
+.bar-button>a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .icon {
