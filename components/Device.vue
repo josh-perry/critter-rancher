@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" :style="device_style">
     <ellipse cx="100" cy="75" rx="45" ry="60" />
 
     <foreignObject x="75" y="50" width="50" height="50">
@@ -40,6 +40,16 @@
   </svg>
 </template>
 
+<script>
+export default {
+  computed: {
+    device_style () {
+      return 'fill:#080231'
+    }
+  }
+}
+</script>
+
 <style scoped>
 svg {
   height: 100vh;
@@ -47,7 +57,7 @@ svg {
 }
 
 .screen {
-  background: white;
+  background: #a9ffbf;
   width: 100%;
   height: 100%;
 
@@ -60,12 +70,13 @@ svg {
 
   image-rendering: pixelated;
 
-  flex: 0 0 50%;
+  flex: 0 0 auto;
 }
 
 .button-bar {
-  flex: 0 0 25%;
+  flex: 0 0 15%;
   display: flex;
+  background: #91ff81;
 
   min-height: 0;
 }
