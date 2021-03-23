@@ -11,7 +11,7 @@
           <BarButton icon="clinic-medical" />
         </div>
 
-        <img src="/img/test_critter.png">
+        <Critter />
 
         <div class="button-bar">
           <BarButton icon="bath" />
@@ -65,11 +65,7 @@ svg {
   flex-flow: column nowrap;
 }
 
-.screen>img {
-  margin: auto;
-
-  image-rendering: pixelated;
-
+Critter {
   flex: 0 0 auto;
 }
 
