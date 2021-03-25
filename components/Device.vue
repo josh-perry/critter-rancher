@@ -5,7 +5,7 @@
     <foreignObject x="75" y="50" width="50" height="50">
       <div class="screen">
         <div class="button-bar">
-          <BarButton icon="utensils" />
+          <BarButton icon="utensils" action="feed" />
           <BarButton icon="lightbulb" />
           <BarButton icon="dice-six" />
           <BarButton icon="clinic-medical" />

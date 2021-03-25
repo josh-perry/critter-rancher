@@ -6,13 +6,21 @@ export const state = () => ({
 
 export const mutations = {
   tick(state) {
-    console.log(state.critter.sprite)
     state.critter.tick()
+  },
+
+  feed(state) {
+    state.critter.feed()
   }
 }
 
 export const actions = {
   async tick(context) {
-    context.commit("tick")
+    context.commit('tick')
+  },
+
+  async feed(context) {
+    console.log("commiting feed")
+    context.commit('feed')
   }
 }

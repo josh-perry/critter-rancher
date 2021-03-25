@@ -1,6 +1,6 @@
 <template>
   <div class="bar-button">
-    <a href="#">
+    <a href="#" v-on:click="button_press">
       <FontAwesomeIcon class="icon" :icon="fa_icon" />
     </a>
   </div>
@@ -14,11 +14,30 @@ export default {
       default: () => {
         return ''
       }
+    },
+    action: {
+      type: String,
+      default: () => {
+        return null
+      }
     }
   },
   computed: {
     fa_icon () {
       return ['fas', this.icon]
+    }
+  },
+  methods: {
+    button_press: () => {
+      switch (this.action) {
+        case 'feed': {
+          this.$store.dispatch('critter/feed')
+          break
+        }
+        default: {
+          break
+        }
+      }
     }
   }
 }

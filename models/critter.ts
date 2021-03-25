@@ -29,7 +29,13 @@ export default class Critter {
     }
   }
 
+  feed() {
+    this.hunger += 30
+  }
+
   tick() {
+    this.hunger = Math.min(Math.max(this.hunger, 0), 100)
+
     if (!this.hatched) {
       this.hatchTick()
     }
