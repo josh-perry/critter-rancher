@@ -1,6 +1,6 @@
 <template>
   <div class="bar-button">
-    <a href="#" v-on:click="button_press">
+    <a href="#" @click="button_press">
       <FontAwesomeIcon class="icon" :icon="fa_icon" />
     </a>
   </div>
@@ -28,7 +28,7 @@ export default {
     }
   },
   methods: {
-    button_press: () => {
+    button_press () {
       switch (this.action) {
         case 'feed': {
           this.$store.dispatch('critter/feed')
